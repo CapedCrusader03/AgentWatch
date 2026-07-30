@@ -1,6 +1,7 @@
 """AgentObs Python SDK"""
 
 from agentobs.decorators import traceable
+from agentobs.http_sender import send_spans_http
 from agentobs.models import Span, TraceEvent
 from agentobs.tracer import (
     clear_span_buffer,
@@ -25,4 +26,5 @@ __all__ = [
     "set_current_trace_id",
     "reset_tracer",
     "traceable",
+    "send_spans_http",
 ]
