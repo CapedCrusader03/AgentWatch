@@ -10,3 +10,18 @@ A focused implementation of an agent tracing, evaluation, and guardrails pipelin
 - `api-service/`: Go REST API serving aggregated metrics, trace waterfalls, and alerts.
 - `dashboard/`: React frontend dashboard.
 - `infra/`: Infrastructure components (Docker Compose, Kafka, Postgres).
+
+## Local Development Infrastructure
+
+### Postgres Database
+- **Host**: `localhost`
+- **Port**: `5432`
+- **Database**: `agentwatch`
+- **Username**: `postgres`
+- **Password**: `postgres`
+
+Start Postgres via Docker Compose:
+```bash
+docker compose -f infra/docker-compose.yml up -d
+```
+
